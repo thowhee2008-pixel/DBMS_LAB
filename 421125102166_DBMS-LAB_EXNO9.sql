@@ -1,7 +1,7 @@
-/*Select  database and Insert one document*/
+Select  database and Insert one document
   use college 
-  /*OUTPUT: 
-  switched to db library */
+  OUTPUT: 
+  switched to db library 
   db.students.insertOne({     
     student_id: 101,     
     name: "Alice",     
@@ -9,9 +9,9 @@
     course: "Computer Science",     
     city: "Chennai" 
   })  
-/* OUTPUT:  
+OUTPUT:  
   { acknowledged: true,insertedId: ObjectId('...') }*/ 
-/*Insert many document */
+Insert many document 
 db.students.insertMany([{         
     student_id: 102,         
     name: "Bob",         
@@ -26,9 +26,9 @@ db.students.insertMany([{
     course: "Electronics",        
     city: "Coimbatore"  
 }]) 
-/* Display all documents */ 
+Display all documents 
 db.students.find() 
-/*OUTPUT: 
+OUTPUT: 
 [{ 
   _id: ObjectId('...'), 
   student_id: 101, 
@@ -52,4 +52,4 @@ db.students.find()
   age: 20, 
   course: "Electronics", 
   city: "Coimbatore" 
-}] */
+}] 
